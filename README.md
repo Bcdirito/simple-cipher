@@ -39,10 +39,10 @@ When using a shift of _10_:
 
 ```ruby
 # Encode:
-Cipher.encode('foobar') # ---> 'pyylkb'
+Cipher.encode('foobar', distance: 10) # ---> 'pyylkb'
 
 # Decode:
-Cipher.decode('pyylkb') # ---> 'foobar'
+Cipher.decode('pyylkb', distance: 10) # ---> 'foobar'
 ```
 
 Our implementation of the shift cipher is a simple one:
