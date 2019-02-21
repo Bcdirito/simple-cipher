@@ -19,38 +19,47 @@ simple shift cipher, a given input phrase is shifted by a certain number of
 characters so that it is no longer legible.
 
 When using a shift of `1`, each letter in the input text will be modified to
-the next letter. For example, we could encode:
+the next letter.
 
-`foobar` -> `gppcbs`
+### Examples
 
-To decode, we can simply reverse the shift:
+When using a shift of _1_ (default):
 
-`gppcbs` -> `foobar`
+```ruby
+# Encode:
+Cipher.encode('foobar') # ---> 'gppcbs'
 
-When using a shift of `10`:
+# Decode:
+# we can simply reverse the shift:
 
-Encode: `foobar` -> `pyylkb`
+Cipher.decode('gppcbs') # ---> 'foobar'
+```
 
-Decode: `pyylkb` -> `foobar`
+When using a shift of _10_:
+
+```ruby
+# Encode:
+Cipher.encode('foobar') # ---> 'pyylkb'
+
+# Decode:
+Cipher.decode('pyylkb') # ---> 'foobar'
+```
 
 Our implementation of the shift cipher is a simple one:
 
-- For encoding, the input text should be shifted by `n` characters, with a
+- For encoding, the input text should be shifted by _n_ characters, with a
   default shift of 1
 - For decoding, encoded text should be shifted back and return the original
   input text.
 - When a shift causes a letter to pass the end of the alphabet, it should wrap
-  to the beginning. For example, `z` shifted by 1 should become `a`.
+  to the beginning.
 
-We have provided you with a `Cipher` class with two class methods: `encode`
-and `decode`.  Both methods take two arguments: `input` and `distance`. You
-will notice that the tests do not always specify `distance`, so a default may
-be necessary.
+Example: _z_ shifted by 1 should become _a_.
 
 ## Download
 
-Fork this repository to your own account and clone it, or download it as a zip
-and extract the files.
+Fork this repository to your account and clone it, or download it as a zip and
+extract the files.
 
 ## Run
 
@@ -70,12 +79,12 @@ n runs, 0 assertions, 0 failures, 0 errors, n skips
 - You are encouraged to make this an iterative TDD process: comment out one
   `skip` statement and run the tests to ensure they pass. Then comment out the
   `skip` statement in next test and repeat the process.
-- Use the test file to guild your imlementation.
-- Nothing in the test file should change execpt for commenting out the `skip`
+- Use the test file to guild your implementation.
+- Nothing in the test file should change expect for commenting out the `skip`
   statements.
 
-**The challenge is considered complete once _skip_ statements are commented
-out and all tests pass.**
+**The challenge is complete once all _skip_ statements are commented out and
+all tests pass.**
 
 ```
 (_0 failures, 0 errors, 0 skips_)
@@ -87,6 +96,8 @@ out and all tests pass.**
   committed and pushed, and send us a link to your repository via email.
 - If you downloaded the repository as a zip file, zip your changes and send
   them to us via an email attachment.
+- Good luck. I hope you enjoy sharpening your skills on challenges like this
+  as much as we do.
 
 ## Troubleshooting
 
