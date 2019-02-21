@@ -34,6 +34,7 @@ Encode: `foobar` -> `pyylkb`
 Decode: `pyylkb` -> `foobar`
 
 Our implementation of the shift cipher is a simple one:
+
 - For encoding, the input text should be shifted by `n` characters, with a
   default shift of 1
 - For decoding, encoded text should be shifted back and return the original
@@ -64,17 +65,21 @@ n runs, 0 assertions, 0 failures, 0 errors, n skips
 
 ## Complete
 
-- The project contains two files: `cipher_test.rb` and `cipher.rb`. You will
-  need to modify both of these files.
-- Any code changes should be placed in `cipher.rb`. We have created a class in
-  this file for you to build on.
-- `skip` statements in `cipher_test.rb` should be commented out as you begin to
-  test your code.
+- The project contains a test file: _cipher_test.rb_. You will create a file
+  containing your implementation.
 - You are encouraged to make this an iterative TDD process: comment out one
-  _skip_ statement and run the tests to ensure they pass. Then proceed to the
-  commenting out the next _skip_ statement and repeat the process.
-- **The challenge is considered complete once all _skip_ statements are
-  commented out and all tests pass** (_0 failures, 0 errors, 0 skips_).
+  `skip` statement and run the tests to ensure they pass. Then comment out the
+  `skip` statement in next test and repeat the process.
+- Use the test file to guild your imlementation.
+- Nothing in the test file should change execpt for commenting out the `skip`
+  statements.
+
+**The challenge is considered complete once _skip_ statements are commented
+out and all tests pass.**
+
+```
+(_0 failures, 0 errors, 0 skips_)
+```
 
 ## Submit
 
