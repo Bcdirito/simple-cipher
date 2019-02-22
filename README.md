@@ -4,8 +4,8 @@ Shift Cipher challenge
 ## Goal
 
 Your challenge is to complete a shift cipher challenge that can encode and
-decode simple phrases.  You will know that your have completed the challenge
-when all tests complete successfully.
+decode simple phrases.  You will have completed the challenge
+when all tests succeed.
 
 ## What is a shift cipher?
 
@@ -18,8 +18,7 @@ encryption technique, and a suitable topic for the focus of our challenge. In a
 simple shift cipher, a given input phrase is shifted by a certain number of
 characters so that it is no longer legible.
 
-When using a shift of `1`, each letter in the input text will be modified to
-the next letter.
+For example, when using a shift of 1, the letter _a_ would be shifted to _b_.
 
 ### Examples
 
@@ -30,8 +29,7 @@ When using a shift of _1_ (default):
 Cipher.encode('foobar') # ---> 'gppcbs'
 
 # Decode:
-# we can simply reverse the shift:
-
+# We can simply reverse the shift
 Cipher.decode('gppcbs') # ---> 'foobar'
 ```
 
@@ -66,28 +64,23 @@ extract the files.
 1. Open a terminal window and navigate to the challenge directory.
 2. Run `gem install minitest`.
 3. Run `ruby cipher_test.rb` to test the challenge.
-4. On the first run, Minitest should output the following:
-
-```ruby
-n runs, 0 assertions, 0 failures, 0 errors, n skips
-```
 
 ## Complete
 
-- The project contains a test file: _cipher_test.rb_. You will create a file
+- The project contains a test file: _cipher_test.rb_. You will need to create a file
   containing your implementation.
 - You are encouraged to make this an iterative TDD process: comment out one
   `skip` statement and run the tests to ensure they pass. Then comment out the
-  `skip` statement in next test and repeat the process.
+  `skip` statement in the subsequent test and repeat the process.
 - Use the test file to guide your implementation.
-- Nothing in the test file should change expect for commenting out the `skip`
-  statements.
+- The test file should remain unchanged other than commenting out `skip`
+  statements during the TDD process.
 
 **The challenge is complete once all _skip_ statements are commented out and
-all tests pass.**
+all tests pass:**
 
 ```
-(_0 failures, 0 errors, 0 skips_)
+(0 failures, 0 errors, 0 skips)
 ```
 
 ## Submit
@@ -96,7 +89,7 @@ all tests pass.**
   committed and pushed, and send us a link to your repository via email.
 - If you downloaded the repository as a zip file, zip your changes and send
   them to us via an email attachment.
-- Good luck. I hope you enjoy sharpening your skills on challenges like this
+- Good luck! We hope you enjoy sharpening your skills on challenges like this
   as much as we do.
 
 ## Troubleshooting
