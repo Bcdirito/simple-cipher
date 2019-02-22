@@ -79,7 +79,7 @@ n runs, 0 assertions, 0 failures, 0 errors, n skips
 - You are encouraged to make this an iterative TDD process: comment out one
   `skip` statement and run the tests to ensure they pass. Then comment out the
   `skip` statement in next test and repeat the process.
-- Use the test file to guild your implementation.
+- Use the test file to guide your implementation.
 - Nothing in the test file should change expect for commenting out the `skip`
   statements.
 
