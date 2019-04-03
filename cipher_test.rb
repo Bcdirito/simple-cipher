@@ -14,7 +14,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_letter_with_default_shift_distance
-    skip
+    # skip
 
     plaintext = 'b'
     ciphertext = 'a'
@@ -22,7 +22,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_wraps_z_to_a
-    skip
+    # skip
 
     plaintext = 'z'
     ciphertext = 'a'
@@ -30,7 +30,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_wraps_a_to_z
-    skip
+    # skip
 
     plaintext = 'a'
     ciphertext = 'z'
@@ -38,7 +38,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_string_with_default_shift_distance
-    skip
+    # skip
 
     plaintext = 'wxyzabcd'
     ciphertext = 'xyzabcde'
@@ -46,7 +46,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_string_with_default_shift_distance
-    skip
+    # skip
 
     plaintext = 'xyzabcde'
     ciphertext = 'wxyzabcd'
@@ -54,7 +54,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_with_10_shift_distance
-    skip
+    # skip
 
     plaintext = 'wxyzabcd'
     ciphertext = 'ghijklmn'
@@ -62,7 +62,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_with_10_shift_distance
-    skip
+    # skip
 
     plaintext = 'ghijklmn'
     ciphertext = 'wxyzabcd'
@@ -70,7 +70,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_with_26_shift_distance
-    skip
+    # skip
 
     plaintext = 'abcdefghij'
     ciphertext = 'abcdefghij'
@@ -78,7 +78,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_with_26_shift_distance
-    skip
+    # skip
 
     plaintext = 'klmnopqrst'
     ciphertext = 'klmnopqrst'
@@ -86,7 +86,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_with_27_shift_distance
-    skip
+    # skip
 
     plaintext = 'wxyzabcd'
     ciphertext = 'xyzabcde'
@@ -94,7 +94,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_with_27_shift_distance
-    skip
+    # skip
 
     plaintext = 'xyzabcde'
     ciphertext = 'wxyzabcd'
@@ -102,7 +102,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_always_returns_downcase_string
-    skip
+    # skip
 
     plaintext = 'AbCdEfGhIj'
     ciphertext = 'bcdefghijk'
@@ -110,7 +110,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_always_returns_downcase_string
-    skip
+    # skip
 
     plaintext = 'BcDeFgHiJk'
     ciphertext = 'abcdefghij'
@@ -118,7 +118,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_encode_raise_error_if_non_letter_characters
-    skip
+    # skip
 
     plaintext = 'az4'
     assert_raises Cipher::CipherValidationError do
@@ -127,7 +127,7 @@ class CipherTest < Minitest::Test
   end
 
   def test_decode_raise_error_if_non_letter_characters
-    skip
+    # skip
 
     plaintext = 'za4'
     assert_raises Cipher::CipherValidationError do
